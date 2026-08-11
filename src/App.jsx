@@ -244,112 +244,280 @@ function App() {
       </section>
 
 
-      {/* PROJECT */}
-      <section id="projects" className="project-section">
+     {/* FEATURED PROJECT */}
+<section id="projects" className="project-section">
 
-  <p className="section-label">FEATURED PROJECT</p>
+  <div className="project-heading">
+    <p className="section-label">FEATURED PROJECT</p>
 
-  <h2 className="project-title">BBHealthApp</h2>
+    <h2>
+      BBHealth<span>App</span>
+    </h2>
 
-  <p className="project-subtitle">
-    CLOUD • DEVOPS • CI/CD
-  </p>
+    <p className="project-subtitle">
+      CLOUD • DEVOPS • CI/CD
+    </p>
+  </div>
 
-  <div className="project-3d-card">
 
-    <div className="project-card-glow"></div>
+  <div className="featured-project">
 
-    <div className="project-header">
+    {/* 3D BACKGROUND */}
+    <div className="project-ambient-glow"></div>
+    <div className="project-grid-bg"></div>
+
+
+    {/* PROJECT HEADER */}
+    <div className="featured-header">
 
       <div>
-        <span className="project-status">
-          ● DEPLOYED
-        </span>
+
+        <div className="project-status">
+          <span className="status-dot"></span>
+          DEPLOYED
+        </div>
 
         <h3>
-          Production-style Cloud Deployment
+          Production-Style
+          <br />
+          Cloud Deployment
         </h3>
+
+        <p>
+          End-to-end CI/CD deployment of a containerized
+          application using AWS, Docker, Jenkins,
+          Kubernetes and Helm.
+        </p>
+
       </div>
 
-      <div className="project-badge">
-        AWS
+
+      <div className="aws-3d-badge">
+
+        <div className="aws-badge-icon">
+          ☁
+        </div>
+
+        <strong>AWS</strong>
+
+        <small>
+          CLOUD
+        </small>
+
       </div>
 
     </div>
 
-    <div className="deployment-pipeline">
 
-  <div className="pipeline-step">
-    <div className="pipeline-icon github">GH</div>
-    <div className="pipeline-info">
-      <strong>GitHub</strong>
-      <span>Source Code</span>
+    {/* ARCHITECTURE */}
+    <div className="architecture">
+
+      <div className="architecture-line"></div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          ⌘
+        </div>
+
+        <strong>GitHub</strong>
+
+        <small>
+          SOURCE
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          ⚙
+        </div>
+
+        <strong>Jenkins</strong>
+
+        <small>
+          CI/CD
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          M
+        </div>
+
+        <strong>Maven</strong>
+
+        <small>
+          BUILD
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          🐳
+        </div>
+
+        <strong>Docker</strong>
+
+        <small>
+          IMAGE
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          ECR
+        </div>
+
+        <strong>Amazon ECR</strong>
+
+        <small>
+          REGISTRY
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node">
+
+        <div className="architecture-icon">
+          H
+        </div>
+
+        <strong>Helm</strong>
+
+        <small>
+          DEPLOY
+        </small>
+
+      </div>
+
+
+      <div className="architecture-arrow">
+        →
+      </div>
+
+
+      <div className="architecture-node eks-node">
+
+        <div className="architecture-icon">
+          ☸
+        </div>
+
+        <strong>Amazon EKS</strong>
+
+        <small>
+          KUBERNETES
+        </small>
+
+      </div>
+
     </div>
-  </div>
 
-  <div className="pipeline-arrow">→</div>
+    {/* PROJECT METRICS */}
+    <div className="project-metrics">
 
-  <div className="pipeline-step">
-    <div className="pipeline-icon jenkins">J</div>
-    <div className="pipeline-info">
-      <strong>Jenkins</strong>
-      <span>CI / CD</span>
+      <div className="metric">
+
+        <strong>01</strong>
+
+        <span>
+          CI/CD
+        </span>
+
+        <small>
+          Automated Pipeline
+        </small>
+
+      </div>
+
+
+      <div className="metric">
+
+        <strong>02</strong>
+
+        <span>
+          Docker
+        </span>
+
+        <small>
+          Containerized Apps
+        </small>
+
+      </div>
+
+
+      <div className="metric">
+
+        <strong>03</strong>
+
+        <span>
+          EKS
+        </span>
+
+        <small>
+          Kubernetes Deployment
+        </small>
+
+      </div>
+
+
+      <div className="metric">
+
+        <strong>04</strong>
+
+        <span>
+          Helm
+        </span>
+
+        <small>
+          Deployment Management
+        </small>
+
+      </div>
+
     </div>
-  </div>
 
-  <div className="pipeline-arrow">→</div>
 
-  <div className="pipeline-step">
-    <div className="pipeline-icon maven">M</div>
-    <div className="pipeline-info">
-      <strong>Maven</strong>
-      <span>Build</span>
-    </div>
-  </div>
-
-  <div className="pipeline-arrow">→</div>
-
-  <div className="pipeline-step">
-    <div className="pipeline-icon docker">🐳</div>
-    <div className="pipeline-info">
-      <strong>Docker</strong>
-      <span>Container</span>
-    </div>
-  </div>
-
-  <div className="pipeline-arrow">→</div>
-
-  <div className="pipeline-step">
-    <div className="pipeline-icon ecr">ECR</div>
-    <div className="pipeline-info">
-      <strong>Amazon ECR</strong>
-      <span>Registry</span>
-    </div>
-  </div>
-
-  <div className="pipeline-arrow">→</div>
-
-  <div className="pipeline-step">
-    <div className="pipeline-icon helm">H</div>
-    <div className="pipeline-info">
-      <strong>Helm</strong>
-      <span>Deployment</span>
-    </div>
-  </div>
-
-  <div className="pipeline-arrow">→</div>
-
-  <div className="pipeline-step final">
-    <div className="pipeline-icon eks">☸</div>
-    <div className="pipeline-info">
-      <strong>Amazon EKS</strong>
-      <span>Kubernetes</span>
-    </div>
-  </div>
-
-</div>
-
-    <div className="project-tech-stack">
+    {/* TECHNOLOGIES */}
+    <div className="project-stack">
 
       <span>AWS</span>
       <span>Jenkins</span>
@@ -364,33 +532,70 @@ function App() {
 
     </div>
 
-    <div className="project-details">
 
-      <div className="detail-column">
+    {/* WHAT I BUILT */}
+    <div className="project-bottom">
 
-        <h4>What I Built</h4>
+      <div className="project-description">
 
-        <ul>
-          <li>Jenkins CI/CD automation</li>
-          <li>Maven backend builds</li>
-          <li>Node.js frontend build</li>
-          <li>Docker containerization</li>
-          <li>Amazon ECR image management</li>
-        </ul>
+        <span className="project-mini-label">
+          PROJECT OVERVIEW
+        </span>
+
+        <h4>
+          What I Built
+        </h4>
+
+        <p>
+          Designed and implemented a production-style
+          CI/CD workflow that builds, containerizes and
+          deploys application services to Amazon EKS.
+        </p>
 
       </div>
 
-      <div className="detail-column">
 
-        <h4>Cloud Deployment</h4>
+      <div className="project-features">
 
-        <ul>
-          <li>Kubernetes application deployment</li>
-          <li>Helm deployment management</li>
-          <li>Amazon EKS cluster deployment</li>
-          <li>CI/CD troubleshooting</li>
-          <li>Production-style workflow</li>
-        </ul>
+        <div>
+          <span>✓</span>
+          Jenkins CI/CD automation
+        </div>
+
+        <div>
+          <span>✓</span>
+          Maven backend builds
+        </div>
+
+        <div>
+          <span>✓</span>
+          Docker containerization
+        </div>
+
+        <div>
+          <span>✓</span>
+          Amazon ECR image management
+        </div>
+
+        <div>
+          <span>✓</span>
+          Kubernetes deployment
+        </div>
+
+        <div>
+          <span>✓</span>
+          Helm deployment management
+        </div>
+
+        <div>
+          <span>✓</span>
+          Amazon EKS deployment
+        </div>
+
+        <div>
+          <span>✓</span>
+          CI/CD troubleshooting
+        </div>
 
       </div>
 
@@ -400,81 +605,155 @@ function App() {
 
 </section>
 
-
       {/* EXPERIENCE */}
-      <section id="experience" className="section">
+      <section id="experience" className="section journey-section">
 
-        <p className="section-label">
-          EXPERIENCE
-        </p>
+  <p className="section-label">EXPERIENCE</p>
 
-        <h2>
-          Professional Journey
-        </h2>
+  <h2>Professional Journey</h2>
 
-        <div className="experience-card">
+  <div className="journey-timeline">
 
-          <div className="experience-top">
+    <div className="journey-line"></div>
 
-            <div>
-              <span className="experience-label">
-                INTERNSHIP
-              </span>
+    <div className="journey-card experience-3d">
 
-              <h3>
-                Cummins Technologies India
-                Private Limited
-              </h3>
-            </div>
-
-            <span className="date">
-              June 2025 – July 2026
-            </span>
-
-          </div>
-
-          <p>
-            Internship and project experience involving software
-            development, technical learning and practical exposure
-            to enterprise technology environments.
-          </p>
-
+      <div className="journey-card-top">
+        <div className="journey-icon">
+          ☁
         </div>
 
-      </section>
+        <div className="journey-number">
+          01
+        </div>
+      </div>
 
+      <div className="journey-content">
+
+        <span className="journey-type">
+          INTERNSHIP
+        </span>
+
+        <h3>
+          Cummins Technologies India
+          Private Limited
+        </h3>
+
+        <div className="journey-date">
+          <span>◉</span>
+          June 2025 – July 2026
+        </div>
+
+        <p>
+          Internship and project experience involving software
+          development, technical learning and practical exposure
+          to enterprise technology environments.
+        </p>
+
+        <div className="journey-tags">
+          <span>Software Development</span>
+          <span>REST APIs</span>
+          <span>Docker</span>
+          <span>React</span>
+          <span>Spring Boot</span>
+          <span>Maven</span>
+        </div>
+
+      </div>
+
+      <div className="card-depth"></div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* EDUCATION */}
-      <section className="section">
+      <section id="education" className="section education-section">
 
-        <p className="section-label">
-          EDUCATION
-        </p>
+  <p className="section-label">EDUCATION</p>
 
-        <h2>
-          Academic Background
-        </h2>
+  <h2>Academic Background</h2>
 
-        <div className="education-card">
+  <div className="education-3d-wrapper">
 
-          <span className="education-year">
-            2025
-          </span>
+    <div className="education-orbit orbit-education-one"></div>
+    <div className="education-orbit orbit-education-two"></div>
 
-          <div>
-            <span className="education-label">
-              BACHELOR'S DEGREE
-            </span>
+    <div className="education-3d-card">
 
-            <h3>
-              Bachelor of Science
-              in Computer Science
-            </h3>
-          </div>
+      <div className="education-glow"></div>
 
+      <div className="education-top">
+
+        <div className="education-icon">
+          🎓
         </div>
 
-      </section>
+        <div className="education-year">
+          2025
+        </div>
+
+      </div>
+
+      <div className="education-main">
+
+        <span className="education-label">
+          BACHELOR'S DEGREE
+        </span>
+
+        <h3>
+          Bachelor of Science
+          <br />
+          in Computer Science
+        </h3>
+
+        <p className="education-institute">
+          Yashawantrao Chavan Institute of Science,
+          Satara
+        </p>
+
+        <p className="education-university">
+          From KBP University, Satara
+        </p>
+
+      </div>
+
+      <div className="education-score">
+
+        <span>AGGREGATE</span>
+
+        <strong>
+          81.19%
+        </strong>
+
+      </div>
+
+      <div className="education-bottom">
+
+        <div>
+          <small>FIELD</small>
+          <strong>Computer Science</strong>
+        </div>
+
+        <div>
+          <small>YEAR</small>
+          <strong>2025</strong>
+        </div>
+
+        <div>
+          <small>STATUS</small>
+          <strong>COMPLETED</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* CONTACT */}
