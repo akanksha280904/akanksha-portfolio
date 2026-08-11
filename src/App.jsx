@@ -290,6 +290,15 @@ function App() {
         </p>
 
       </div>
+      <div className="project-links">
+  <a
+    href="YOUR_GITHUB_REPOSITORY_URL"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View GitHub ↗
+  </a>
+</div>
 
 
       <div className="aws-3d-badge">
