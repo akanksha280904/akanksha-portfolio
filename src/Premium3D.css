@@ -1407,3 +1407,92 @@ footer {
     padding: 22px;
   }
 }
+/* =========================================
+   EXTRA SMALL PREMIUM CONTACT
+   ========================================= */
+
+.contact-section {
+  padding: 65px 6% !important;
+}
+
+.contact-section > h2 {
+  font-size: 38px !important;
+  margin-bottom: 28px !important;
+}
+
+/* Smaller overall layout */
+.contact-grid {
+  max-width: 700px !important;
+  gap: 10px !important;
+}
+
+/* Small resume card */
+.resume-card {
+  min-height: 150px !important;
+  padding: 22px !important;
+  border-radius: 18px !important;
+}
+
+.resume-card span {
+  font-size: 8px !important;
+  letter-spacing: 2px !important;
+}
+
+.resume-card strong {
+  font-size: 20px !important;
+}
+
+/* Small contact cards */
+.contact-card {
+  min-height: 62px !important;
+  padding: 11px 14px !important;
+  gap: 11px !important;
+  border-radius: 14px !important;
+}
+
+.contact-icon {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 9px !important;
+  font-size: 11px !important;
+}
+
+.contact-card small {
+  font-size: 7px !important;
+  letter-spacing: 1.5px !important;
+  margin-bottom: 2px !important;
+}
+
+.contact-card strong {
+  font-size: 10px !important;
+}
+
+/* Keep 3D but subtle */
+.resume-card:hover,
+.contact-card:hover {
+  transform:
+    perspective(900px)
+    rotateX(2deg)
+    rotateY(-2deg)
+    translateY(-4px) !important;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .contact-section {
+    padding: 55px 5% !important;
+  }
+
+  .contact-section > h2 {
+    font-size: 32px !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .resume-card {
+    min-height: 135px !important;
+  }
+}

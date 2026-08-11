@@ -756,87 +756,100 @@ function App() {
 </section>
 
 
-      {/* CONTACT */}
-      <section id="contact" className="section contact-section">
+      <section id="contact" className="contact-section">
 
-        <p className="section-label">
-          CONTACT
-        </p>
+  <div className="contact-heading">
+    <span className="section-label">GET IN TOUCH</span>
 
-        <h2>
-          Let's Build Something
-        </h2>
+    <h2>
+      Let's Build
+      <span> Something.</span>
+    </h2>
 
-        <div className="contact-grid">
+    <p>
+      Open to DevOps, Cloud and software engineering opportunities.
+    </p>
+  </div>
 
-          <a
-  href="/akankshashindeeresumee.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="resume-card"
->
-  <span>RESUME</span>
-  <strong>View My Resume →</strong>
-</a>
+  <div className="contact-3d">
 
+    <div className="contact-glow"></div>
 
-          <a
-            href="mailto:akankshashinde289@gmail.com"
-            className="contact-card"
-          >
-            <span className="contact-icon">
-              ✉
-            </span>
+    <div className="contact-top">
+      <span className="status-dot"></span>
+      AVAILABLE FOR OPPORTUNITIES
+    </div>
 
-            <div>
-              <small>Email</small>
-              <strong>
-                akankshashinde289@gmail.com
-              </strong>
-            </div>
-          </a>
+    <div className="contact-main">
 
+      <div className="contact-avatar">
+        AS
+      </div>
 
-          <a
-            href="https://www.linkedin.com/in/akankshashinde289"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-card"
-          >
-            <span className="contact-icon">
-              in
-            </span>
+      <div>
+        <h3>Akanksha Shinde</h3>
+        <p>DevOps & Cloud Engineer</p>
+      </div>
 
-            <div>
-              <small>LinkedIn</small>
-              <strong>
-                akankshashinde289
-              </strong>
-            </div>
-          </a>
+    </div>
 
+    <div className="contact-actions">
 
-          <a
-            href="https://github.com/akanksha280904"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-card"
-          >
-            <span className="contact-icon">
-              GH
-            </span>
-
-            <div>
-              <small>GitHub</small>
-              <strong>
-                akanksha280904
-              </strong>
-            </div>
-          </a>
-
+      <a
+        href="mailto:akankshashinde289@gmail.com"
+        className="contact-action"
+      >
+        <span>✉</span>
+        <div>
+          <small>Email</small>
+          <strong>Contact me</strong>
         </div>
+        <b>↗</b>
+      </a>
 
-      </section>
+      <a
+        href="https://www.linkedin.com/in/akankshashinde289"
+        target="_blank"
+        rel="noreferrer"
+        className="contact-action"
+      >
+        <span>in</span>
+        <div>
+          <small>LinkedIn</small>
+          <strong>Connect with me</strong>
+        </div>
+        <b>↗</b>
+      </a>
+
+      <a
+        href="https://github.com/akanksha280904"
+        target="_blank"
+        rel="noreferrer"
+        className="contact-action"
+      >
+        <span>GH</span>
+        <div>
+          <small>GitHub</small>
+          <strong>View my projects</strong>
+        </div>
+        <b>↗</b>
+      </a>
+
+    </div>
+
+    <a
+      href="/akankshashindeeresumee.pdf"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-resume"
+    >
+      <span>VIEW RESUME</span>
+      <strong>Open my CV ↗</strong>
+    </a>
+
+  </div>
+
+</section>
 
 
       {/* FOOTER */}
