@@ -227,7 +227,7 @@ function App() {
             <p>Java</p>
             <p>Python</p>
             <p>JavaScript</p>
-            <p>Go</p>
+            
           </div>
 
           <div className="skill-card">
@@ -245,180 +245,160 @@ function App() {
 
 
       {/* PROJECT */}
-      <section id="projects" className="section">
+      <section id="projects" className="project-section">
 
-        <p className="section-label">
-          FEATURED PROJECT
-        </p>
+  <p className="section-label">FEATURED PROJECT</p>
 
-        <h2>
-          BBHealthApp
-        </h2>
+  <h2 className="project-title">BBHealthApp</h2>
 
-        <div className="project-card">
+  <p className="project-subtitle">
+    CLOUD • DEVOPS • CI/CD
+  </p>
 
-          <div className="project-header">
+  <div className="project-3d-card">
 
-            <div>
-              <span className="project-label">
-                CLOUD • DEVOPS • CI/CD
-              </span>
+    <div className="project-card-glow"></div>
 
-              <h3>
-                Production-style
-                Cloud Deployment
-              </h3>
-            </div>
+    <div className="project-header">
 
-            <div className="project-status">
-              ● DEPLOYED
-            </div>
+      <div>
+        <span className="project-status">
+          ● DEPLOYED
+        </span>
 
-          </div>
+        <h3>
+          Production-style Cloud Deployment
+        </h3>
+      </div>
 
+      <div className="project-badge">
+        AWS
+      </div>
 
-          {/* PIPELINE */}
-          <div className="pipeline">
+    </div>
 
-            <div className="pipeline-item">
-              <strong>GitHub</strong>
-              <small>Source</small>
-            </div>
+    <div className="deployment-pipeline">
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon github">GH</div>
+    <div className="pipeline-info">
+      <strong>GitHub</strong>
+      <span>Source Code</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Jenkins</strong>
-              <small>CI/CD</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon jenkins">J</div>
+    <div className="pipeline-info">
+      <strong>Jenkins</strong>
+      <span>CI / CD</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Maven</strong>
-              <small>Build</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon maven">M</div>
+    <div className="pipeline-info">
+      <strong>Maven</strong>
+      <span>Build</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Docker</strong>
-              <small>Container</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon docker">🐳</div>
+    <div className="pipeline-info">
+      <strong>Docker</strong>
+      <span>Container</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Amazon ECR</strong>
-              <small>Registry</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon ecr">ECR</div>
+    <div className="pipeline-info">
+      <strong>Amazon ECR</strong>
+      <span>Registry</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Helm</strong>
-              <small>Deploy</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-            <span>→</span>
+  <div className="pipeline-step">
+    <div className="pipeline-icon helm">H</div>
+    <div className="pipeline-info">
+      <strong>Helm</strong>
+      <span>Deployment</span>
+    </div>
+  </div>
 
-            <div className="pipeline-item">
-              <strong>Amazon EKS</strong>
-              <small>Kubernetes</small>
-            </div>
+  <div className="pipeline-arrow">→</div>
 
-          </div>
+  <div className="pipeline-step final">
+    <div className="pipeline-icon eks">☸</div>
+    <div className="pipeline-info">
+      <strong>Amazon EKS</strong>
+      <span>Kubernetes</span>
+    </div>
+  </div>
 
+</div>
 
-          {/* PROJECT TECHNOLOGIES */}
-          <div className="project-tech">
+    <div className="project-tech-stack">
 
-            <span>AWS</span>
-            <span>Jenkins</span>
-            <span>Docker</span>
-            <span>Kubernetes</span>
-            <span>Amazon EKS</span>
-            <span>Amazon ECR</span>
-            <span>Helm</span>
-            <span>Maven</span>
-            <span>Git</span>
-            <span>Linux</span>
+      <span>AWS</span>
+      <span>Jenkins</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Amazon EKS</span>
+      <span>Amazon ECR</span>
+      <span>Helm</span>
+      <span>Maven</span>
+      <span>Git</span>
+      <span>Linux</span>
 
-          </div>
+    </div>
 
+    <div className="project-details">
 
-          {/* PROJECT DETAILS */}
-          <div className="project-details">
+      <div className="detail-column">
 
-            <div>
-              <h4>Implementation</h4>
+        <h4>What I Built</h4>
 
-              <ul>
+        <ul>
+          <li>Jenkins CI/CD automation</li>
+          <li>Maven backend builds</li>
+          <li>Node.js frontend build</li>
+          <li>Docker containerization</li>
+          <li>Amazon ECR image management</li>
+        </ul>
 
-                <li>
-                  Created and configured a Jenkins CI/CD pipeline.
-                </li>
+      </div>
 
-                <li>
-                  Built backend services using Maven.
-                </li>
+      <div className="detail-column">
 
-                <li>
-                  Built the frontend application using Node.js.
-                </li>
+        <h4>Cloud Deployment</h4>
 
-                <li>
-                  Created Docker images for application services.
-                </li>
+        <ul>
+          <li>Kubernetes application deployment</li>
+          <li>Helm deployment management</li>
+          <li>Amazon EKS cluster deployment</li>
+          <li>CI/CD troubleshooting</li>
+          <li>Production-style workflow</li>
+        </ul>
 
-                <li>
-                  Pushed Docker images to Amazon ECR.
-                </li>
+      </div>
 
-                <li>
-                  Used Kubernetes for application deployment.
-                </li>
+    </div>
 
-                <li>
-                  Used Helm to manage Kubernetes deployment.
-                </li>
+  </div>
 
-                <li>
-                  Deployed the application to Amazon EKS.
-                </li>
-
-                <li>
-                  Troubleshot CI/CD, Docker, Kubernetes and deployment issues.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div className="project-side">
-
-              <div className="project-metric">
-                <span>PLATFORM</span>
-                <strong>AWS</strong>
-              </div>
-
-              <div className="project-metric">
-                <span>ORCHESTRATION</span>
-                <strong>Kubernetes</strong>
-              </div>
-
-              <div className="project-metric">
-                <span>CI/CD</span>
-                <strong>Jenkins</strong>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
 
       {/* EXPERIENCE */}
@@ -511,16 +491,14 @@ function App() {
         <div className="contact-grid">
 
           <a
-            href="/akankshashindeeresumee.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="resume-card"
-          >
-            <span>RESUME</span>
-            <strong>
-              View My Resume →
-            </strong>
-          </a>
+  href="/akankshashindeeresumee.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume-card"
+>
+  <span>RESUME</span>
+  <strong>View My Resume →</strong>
+</a>
 
 
           <a
